@@ -1,6 +1,10 @@
 .Navcontainer {
   background-color: rgb(187, 133, 194) !important;
-  padding-left: 3rem;
+  padding-left: 1rem;
   position: absolute;
 }
 
+.Payee-Card {
+  margin-top: 4rem;
+  width: 18rem;
+}
