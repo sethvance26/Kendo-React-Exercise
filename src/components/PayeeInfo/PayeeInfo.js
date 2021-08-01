@@ -17,7 +17,9 @@ class PayeeInfo extends Component{
             <div>
                 <ul>
                     <li>Payee Name: {item.Payee.Name}</li>
-                   
+                    <li>Payee Fax Number: {item.Payee.Fax}</li>
+                    <li>Payee Phone Number: {item.Payee.Phone}</li>
+              
 
                     
                         
