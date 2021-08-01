@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import Header from './components/Header/Header';
+import NavbarComp from './components/Navbar/Navbar';
 import PayeeInfo from "./components/PayeeInfo/PayeeInfo"
 
 
@@ -8,6 +8,7 @@ import PayeeInfo from "./components/PayeeInfo/PayeeInfo"
 export const App = () => {
   return (
     <div>
+      <NavbarComp/>
       <PayeeInfo/>
     </div>
 

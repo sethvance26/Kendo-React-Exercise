@@ -16,11 +16,12 @@ class PayeeInfo extends Component{
         return(
             <div>
                 <ul>
+                    <br></br>
                     <li>Payee Name: {item.Payee.Name}</li>
-                    <li>Payee Fax Number: {item.Payee.Fax}</li>
-                    <li>Payee Phone Number: {item.Payee.Phone}</li>
-                    <li>Payee Address 1: {item.Payee.Address.Address1}</li>
-                    <li>Payee Address 2: ""{item.Payee.Address.Address2}</li>
+                    <li>Fax Number: {item.Payee.Fax}</li>
+                    <li>Phone Number: {item.Payee.Phone}</li>
+                    <li>Address 1: {item.Payee.Address.Address1}</li>
+                    <li>Address 2: ""{item.Payee.Address.Address2}</li>
                     <li>City: {item.Payee.Address.City}</li>
                     <li>State or Province: {item.Payee.Address.StateOrProvince}</li>
                     <li>Country: {item.Payee.Address.Country}</li>
@@ -36,6 +37,7 @@ class PayeeInfo extends Component{
                     <li>Payment-PAN: {item.Payment.PAN}</li>
                     <li>Payment-CVV: {item.Payment.CVV}</li>
                     <li>Payment-EXP: {item.Payment.Exp}</li>
+                    
                     <br></br>   
                     <h3>New Payee Below</h3>
                     <br></br>
