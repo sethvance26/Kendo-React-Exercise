@@ -26,7 +26,22 @@ class PayeeInfo extends Component{
                     <li>Country: {item.Payee.Address.Country}</li>
                     <li>Country: {item.Payee.Address.PostalCode}</li>
 
-                        
+                    <br></br>
+
+                    <li>Attention: {item.Payee.Attention}</li>
+                    <li>Attention: {item.Payee.SubmissionDate}</li>
+
+                    <br></br>
+
+                    <li>Payment-PAN: {item.Payment.PAN}</li>
+                    <li>Payment-CVV: {item.Payment.CVV}</li>
+                    <li>Payment-EXP: {item.Payment.Exp}</li>
+                    <br></br>   
+                    <h3>New Payee Below</h3>
+                    <br></br>
+                    
+                    {/* <li>[{item.Remittance}]</li> */}
+                
                     
 
                 </ul>
