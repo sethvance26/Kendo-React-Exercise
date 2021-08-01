@@ -1,26 +1,19 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import Header from './components/Header/Header';
-import Data from "./Data/sample.json";
+import PayeeInfo from "./components/PayeeInfo/PayeeInfo"
 
-function App() {
+
+
+export const App = () => {
   return (
-   
-<div className="posts">
-  {Data.map(post => {
-    console.log(post)
-    
-    return(
-      <>
-      <p>{post.Payee.Name}</p>
-      
-      </>
-    )
-  })}
-</div>
+    <div>
+      <PayeeInfo/>
+    </div>
 
-  );
+  )
 }
+
 
 
 export default App;
