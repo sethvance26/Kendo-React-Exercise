@@ -19,9 +19,13 @@ class PayeeInfo extends Component{
                     <li>Payee Name: {item.Payee.Name}</li>
                     <li>Payee Fax Number: {item.Payee.Fax}</li>
                     <li>Payee Phone Number: {item.Payee.Phone}</li>
-              
+                    <li>Payee Address 1: {item.Payee.Address.Address1}</li>
+                    <li>Payee Address 2: ""{item.Payee.Address.Address2}</li>
+                    <li>City: {item.Payee.Address.City}</li>
+                    <li>State or Province: {item.Payee.Address.StateOrProvince}</li>
+                    <li>Country: {item.Payee.Address.Country}</li>
+                    <li>Country: {item.Payee.Address.PostalCode}</li>
 
-                    
                         
                     
 
