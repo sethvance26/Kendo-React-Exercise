@@ -1,6 +1,6 @@
 .Navcontainer {
   background-color: rgb(187, 133, 194) !important;
-  padding-left: 1rem;
+  padding-left: 3rem;
   position: absolute;
 }
 
@@ -8,3 +8,23 @@
   margin-top: 4rem;
   width: 20rem;
 }
+
+.attention-payment {
+  width: 18rem;
+}
+
+.remittance-cards {
+  width: 25rem;
+}
+
+.details-view {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.details-view-element {
+  
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+

@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Jsondata from '../Data/sample.json';
 import Card from 'react-bootstrap/Card';
 import { ListGroup } from 'react-bootstrap';
+import {Nav, Navbar, NavDropdown} from 'react-bootstrap'
+
 
 const sampleData = Jsondata;
 
@@ -9,7 +11,26 @@ console.log("Hi", Jsondata)
 
 
 class PayeeInfo extends Component{
+    constructor(props) {
+        super(props);
+        this.state = {
+            Payees: []
+        };
+    }
+    componentDidMount(){
+        let payees = [];
+        sampleData.forEach((element) => {
+            payees.push(element.Payee);
+        });
+
+        this.setState({
+            Payees: [...this.state.Payees, payees]
+        })
+        
+    } 
+
     render(){
+        console.log("Hello", this.state);
         return(
             <div>
                 
@@ -20,18 +41,27 @@ class PayeeInfo extends Component{
             
             <div>
                 <ul>
-                    <Card className="Payee-Card">
-                    <Card.Header><p>Payee Name: {Payee.Name}</p></Card.Header>
-                    <ListGroup.Item><p>Fax Number: {Payee.Fax}</p></ListGroup.Item>
-                    <ListGroup.Item><p>Phone Number: {Payee.Phone}</p></ListGroup.Item>
-                    <ListGroup.Item><p>Address 1: {Payee.Address.Address1}</p></ListGroup.Item>
-                    <ListGroup.Item><p>Address 2: ""{Payee.Address.Address2}</p></ListGroup.Item>
-                    <ListGroup.Item><p>City: {Payee.Address.City}</p></ListGroup.Item>
-                    <ListGroup.Item><p>State or Province: {Payee.Address.StateOrProvince}</p></ListGroup.Item>
-                    <ListGroup.Item><p>Country: {Payee.Address.Country}</p></ListGroup.Item>
-                    <ListGroup.Item><p>Country: {Payee.Address.PostalCode}</p></ListGroup.Item>
-                    </Card>
+                
+
                     <br></br>
+                    <Navbar bg="light" expand="lg">
+                    <Navbar.Brand href="#">Choose </Navbar.Brand>
+                    <Navbar.Toggle aria-controls="navbarScroll" />
+                    <Navbar.Collapse id="navbarScroll">
+
+                    <Nav
+                    className="mr-auto my-2 my-lg-0"
+                    style={{ maxHeight: '100px' }}
+                     navbarScroll
+                    >
+                    <NavDropdown title="Payee By Name" id="navbarScrollingDropdown">
+                   <li>Hi</li>
+                    </NavDropdown>
+                    </Nav>
+                    </Navbar.Collapse>
+                    </Navbar>
+                    <br></br>
+                    
                     
                     <Card className="attention-payment">
                     <Card.Header>
@@ -57,12 +87,9 @@ class PayeeInfo extends Component{
                     </Card>
                     <br></br>
                     </div>
-                   ))
-                   
-                   }
-                    
-                    
-                
+                   ))}
+
+
                 </ul>
             </div>
             
