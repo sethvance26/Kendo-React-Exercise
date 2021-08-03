@@ -1,15 +1,13 @@
 import React from 'react';
-// import Container from 'react-bootstrap/Container'
-// import paymerang from "./paymerang.png";
+import Image from 'react-bootstrap/Image'
+import  logo  from '../Images/logo.png'
 
 
 
 export const Home = () => {
     return (
-        <div>
-            <li>This is the Home component</li>
-
-
+        <div className="logo">
+            <img src={logo} />
         </div>
     )
 }
