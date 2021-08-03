@@ -2,7 +2,6 @@ import React from 'react';
 import '@progress/kendo-theme-material/dist/all.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavbarComp from './components/Navbar/Navbar';
-import PayeeInfo from "./components/PayeeInfo/PayeeInfo";
 import GridPage from "./components/Grid/Grid";
 import Home from "./pages/Home";
 import {
@@ -21,8 +20,8 @@ export const App = () => {
       <Switch>
 
       <Route exact path="/" component={Home} />
-      <Route exact path="/Info" component={PayeeInfo} />
-      <Route exact path="/Grid" component={GridPage} />
+      <Route exact path="/Info" component={GridPage} />
+      
       
       </Switch>
     </div>
