@@ -7,7 +7,7 @@ import  logo  from '../Images/logo.png'
 export const Home = () => {
     return (
         <div className="logo" >
-            <img src={logo} />
+            
         </div>
     )
 }

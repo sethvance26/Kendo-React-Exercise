@@ -10,63 +10,47 @@ const DetailComponent = (props) => {
 
   return (
     <div>
-      <section
-        style={{
-          width: "200px",
-          float: "left",
-        }}
-      >
-        <div className="details-view">
-          <div className="details-view-element">
-            <h4>Address</h4>
-            <p>
-              <strong>Street Address 1:</strong>{" "}
-              {dataItem.Payee.Address.Address1}
-            </p>
-            <p>
-              <strong>Street Address 2:</strong>{" "}
-              {dataItem.Payee.Address.Address2}
-            </p>
+      <div className="details-view">
+        <div className="details-card">
+          <h4>Address</h4>
+          <p>
+            <strong>Street Address 1:</strong> {dataItem.Payee.Address.Address1}
+          </p>
+          <p>
+            <strong>Street Address 2:</strong> {dataItem.Payee.Address.Address2}
+          </p>
 
-            <p>
-              <strong>City:</strong> {dataItem.Payee.Address.City}
-            </p>
-            <p>
-              <strong>State or Province:</strong>{" "}
-              {dataItem.Payee.Address.StateOrProvince}
-            </p>
-            <p>
-              <strong>Country:</strong> {dataItem.Payee.Address.Country}
-            </p>
-            <p>
-              <strong>Postal Code:</strong> {dataItem.Payee.Address.PostalCode}
-            </p>
-          </div>
-
-          <div className="details-view-element">
-            <h4>Payment</h4>
-            <p>
-              <strong>PAN:</strong> {dataItem.Payment.PAN}
-            </p>
-            <p>
-              <strong>CVV:</strong> {dataItem.Payment.CVV}
-            </p>
-            <p>
-              <strong>Expired Date:</strong> {dataItem.Payment.Exp}
-            </p>
-          </div>
-          <div className="details-view-element">
-            <Grid
-              style={{
-                minWidth: "60rem",
-                height: "18rem",
-                width: "",
-              }}
-              data={dataItem.Remittance}
-            />
-          </div>
+          <p>
+            <strong>City:</strong> {dataItem.Payee.Address.City}
+          </p>
+          <p>
+            <strong>State or Province:</strong>{" "}
+            {dataItem.Payee.Address.StateOrProvince}
+          </p>
+          <p>
+            <strong>Country:</strong> {dataItem.Payee.Address.Country}
+          </p>
+          <p>
+            <strong>Postal Code:</strong> {dataItem.Payee.Address.PostalCode}
+          </p>
         </div>
-      </section>
+
+        <div className="details-card">
+          <h4>Payment</h4>
+          <p>
+            <strong>PAN:</strong> {dataItem.Payment.PAN}
+          </p>
+          <p>
+            <strong>CVV:</strong> {dataItem.Payment.CVV}
+          </p>
+          <p>
+            <strong>Expired Date:</strong> {dataItem.Payment.Exp}
+          </p>
+        </div>
+        <div className="details-view-element">
+          <Grid style={{ height: "300px" }} data={dataItem.Remittance} />
+        </div>
+      </div>
     </div>
   );
 };
@@ -104,7 +88,7 @@ const GridPage = () => {
       <Grid
         style={{
           width: "100vw",
-          height: "95vh",
+          height: "89vh",
         }}
         sortable={true}
         filterable={true}

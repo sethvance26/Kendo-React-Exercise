@@ -1,6 +1,6 @@
 .Navcontainer {
   background-color: rgb(187, 133, 194) !important;
-  padding-left: 3rem;
+  padding-left: 1rem;
   position: absolute;
 }
 
@@ -19,46 +19,33 @@
 
 .details-view {
   display: flex;
-  border: 2px solid red;
-
+  overflow: hidden !important;
   flex-wrap:wrap;
 }
 
-/* Both of the following below are required for text-overflow */
-/* p {
-  
-  margin-left: 10px;
-  white-space: nowrap;
-  overflow: hidden;
-} */
+
 
 .details-view-element {
-  display: flex;
+  
   
   flex-wrap: wrap;
   margin-right: 7rem;
   margin-left: 1rem;
-  height: 16rem;
+  min-width: 5rem;
+  max-width: 65rem;
   
-  white-space: nowrap;
+  
+  
+  
+  /* white-space: nowrap; */
 }
 
 .logo{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  ;
+  width: 200px;
+  
+  
 }
 
-.details-view-element p {
-  margin: 0%;
-  height: .5px;
-  line-height: 2px;
-}
-
-.remittance-column {
-  min-width: 2rem;
-}
 
 .detail-column {
   width: 150px;
@@ -66,4 +53,35 @@
 
 .k-grid-header thead > tr:not(:only-child) > th {
   width: 150px;
+}
+
+.details-card {
+  padding-left: 10px;
+  padding-right: 10px;
+  
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.footer {
+  height: 5vh;
+  background-color: rgb(191, 201, 223);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+@media (max-width: 465px ) {
+
+  .details-card{
+    padding: 0;
+  }
+
+  .k-detail-cell {
+    padding: 0;
+  }
 }

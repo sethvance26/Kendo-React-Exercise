@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import NavbarComp from './components/Navbar/Navbar';
 import GridPage from "./components/Grid/Grid";
 import Home from "./pages/Home";
+import Footer from "./components/Footer/Footer";
 import {
   BrowserRouter as Router,
   Route,
@@ -17,6 +18,7 @@ export const App = () => {
     <Router>
     <div>
       <NavbarComp/>
+      <Footer />
       <Switch>
 
       <Route exact path="/" component={Home} />
@@ -24,6 +26,7 @@ export const App = () => {
       
       
       </Switch>
+      
     </div>
     </Router>
   )
