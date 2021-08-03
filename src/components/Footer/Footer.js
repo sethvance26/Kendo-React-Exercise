@@ -3,7 +3,7 @@ import React from 'react'
 export const Footer = () => {
     return (
         <div className="footer">
-            <h4>Copyright Paymerang 2021</h4>
+            <h4 className="center-text">Copyright Paymerang 2021</h4>
         </div>
     )
 }

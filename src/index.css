@@ -73,7 +73,14 @@ html, body {
   position: fixed;
   bottom: 0;
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
+
+.center-text {
+  align-self: center;
+}
+
 
 @media (max-width: 465px ) {
 
