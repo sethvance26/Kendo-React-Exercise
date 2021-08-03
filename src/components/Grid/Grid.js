@@ -17,7 +17,9 @@ const DetailComponent = (props) => {
         }}
       >
         <div className="details-view">
+          
           <div className="details-view-element">
+            
             <h4>Address</h4>
             <p>
               <strong>Street Address 1:</strong> {dataItem.Payee.Address.Address1}
@@ -25,6 +27,7 @@ const DetailComponent = (props) => {
             <p>
               <strong>Street Address 2:</strong> {dataItem.Payee.Address.Address2}
             </p>
+            
             <p>
               <strong>City:</strong> {dataItem.Payee.Address.City}
             </p>
@@ -37,7 +40,10 @@ const DetailComponent = (props) => {
             <p>
               <strong>Postal Code:</strong> {dataItem.Payee.Address.PostalCode}
             </p>
+          
           </div>
+
+          
 
           <div className="details-view-element">
             <h4>Payment</h4>
@@ -53,7 +59,9 @@ const DetailComponent = (props) => {
           </div>
           <Grid
         style={{
-          minWidth:"50vw"
+          minWidth:"60rem",
+          height: "18rem",
+          width: ""
         }}
         data={dataItem.Remittance}
       />
@@ -106,11 +114,11 @@ const GridPage = () => {
       buttonCount: 4,
       pageSizes: true
       }} data={dataResult} {...dataState} detail={DetailComponent} onDataStateChange={dataStateChange} expandField="expanded" onExpandChange={expandChange}>
-      <GridColumn  field="Payee.Name" title="Payee Name" />
-      <GridColumn field="Payee.Fax" title="Payee Fax Number"  />
-      <GridColumn field="Payee.Phone" title="Payee Phone Number" />
-      <GridColumn field="Payee.Attention" title="Payee Attention" filter="numeric"  />
-      <GridColumn field="Payee.SubmissionDate" title="Payee Submission Date" filter="date" format="{0:yyyy/MM/dd}"  />
+      <GridColumn  field="Payee.Name" title="Payee Name" className="detail-column"/>
+      <GridColumn field="Payee.Fax" title="Payee Fax Number" className="detail-column" />
+      <GridColumn field="Payee.Phone" title="Payee Phone Number" className="detail-column" />
+      <GridColumn field="Payee.Attention" title="Payee Attention" filter="numeric" className="detail-column" />
+      <GridColumn field="Payee.SubmissionDate" title="Payee Submission Date" filter="date" format="{0:yyyy/MM/dd}" className="detail-column" />
       
     
     </Grid>

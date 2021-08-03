@@ -19,15 +19,51 @@
 
 .details-view {
   display: flex;
-  flex-wrap: wrap;
+  height: 50%;
+  width: 100%;
+  flex-wrap:nowrap;
 }
+
+/* Both of the following below are required for text-overflow */
+/* p {
+  
+  margin-left: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+} */
 
 .details-view-element {
-  
-  padding-right: 1rem;
-  padding-left: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-right: 7rem;
+  margin-left: 1rem;
+  height: 16rem;
+  width: 80%;
+  white-space: nowrap;
 }
 
-.img{
-  align-items: center;
+.logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  ;
+}
+
+.details-view-element p {
+  margin: 0%;
+  height: .5px;
+  line-height: 2px;
+}
+
+.remittance-column {
+  min-width: 2rem;
+}
+
+.detail-column {
+  width: 200px;
+}
+
+.k-filter-row {
+  width: 20px;
 }
