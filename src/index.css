@@ -19,9 +19,9 @@
 
 .details-view {
   display: flex;
-  height: 50%;
-  width: 100%;
-  flex-wrap:nowrap;
+  border: 2px solid red;
+
+  flex-wrap:wrap;
 }
 
 /* Both of the following below are required for text-overflow */
@@ -34,12 +34,12 @@
 
 .details-view-element {
   display: flex;
-  flex-direction: row;
+  
   flex-wrap: wrap;
   margin-right: 7rem;
   margin-left: 1rem;
   height: 16rem;
-  width: 80%;
+  
   white-space: nowrap;
 }
 
@@ -61,9 +61,9 @@
 }
 
 .detail-column {
-  width: 200px;
+  width: 150px;
 }
 
-.k-filter-row {
-  width: 20px;
+.k-grid-header thead > tr:not(:only-child) > th {
+  width: 150px;
 }
