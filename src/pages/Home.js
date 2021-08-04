@@ -6,7 +6,9 @@ import  logo  from '../Images/logo.png'
 
 export const Home = () => {
     return (
-        <div className="logo" >
+        <div className="home-background" >
+            
+            <h1 className="center-home-text">Hello, Employee!</h1>
             
         </div>
     )
