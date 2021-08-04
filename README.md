@@ -13,7 +13,7 @@ Paymerang Assessment
 - [Installation](#Installation)
 - [Usage](#Usage)
 - [Sample-Photos](#Sample-Photos)
-- [Extra](#Extra)
+- [Link](#Link)
 - [Questions](#Questions)
 
 ## Description
@@ -39,9 +39,10 @@ https://github.com/sethvance26/Paymerang-Assessment
 ![samp-2](https://user-images.githubusercontent.com/76290048/128137089-d22b821c-f9d4-4f63-9800-616f0e57e6d3.PNG)
 
 
-## Extra
+## Link
 Here our policy is, if you break it you de-bug it!
-
+<br>
+Link to deployed application - https://paymerang.herokuapp.com/
 
 ### Questions
 If you have any questions or concerns, please e-mail me at sethvance39@gmail.com. More work can be found at my Github. Username -  sethvance26 
