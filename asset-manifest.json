@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Paymerang-Assessment/static/css/main.08a9aa5a.chunk.css",
+    "main.js": "/Paymerang-Assessment/static/js/main.8b0d09e6.chunk.js",
+    "main.js.map": "/Paymerang-Assessment/static/js/main.8b0d09e6.chunk.js.map",
+    "runtime-main.js": "/Paymerang-Assessment/static/js/runtime-main.0932775e.js",
+    "runtime-main.js.map": "/Paymerang-Assessment/static/js/runtime-main.0932775e.js.map",
+    "static/css/2.0a195bdc.chunk.css": "/Paymerang-Assessment/static/css/2.0a195bdc.chunk.css",
+    "static/js/2.22260649.chunk.js": "/Paymerang-Assessment/static/js/2.22260649.chunk.js",
+    "static/js/2.22260649.chunk.js.map": "/Paymerang-Assessment/static/js/2.22260649.chunk.js.map",
+    "static/js/3.af6362ef.chunk.js": "/Paymerang-Assessment/static/js/3.af6362ef.chunk.js",
+    "static/js/3.af6362ef.chunk.js.map": "/Paymerang-Assessment/static/js/3.af6362ef.chunk.js.map",
+    "index.html": "/Paymerang-Assessment/index.html",
+    "static/css/2.0a195bdc.chunk.css.map": "/Paymerang-Assessment/static/css/2.0a195bdc.chunk.css.map",
+    "static/css/main.08a9aa5a.chunk.css.map": "/Paymerang-Assessment/static/css/main.08a9aa5a.chunk.css.map",
+    "static/js/2.22260649.chunk.js.LICENSE.txt": "/Paymerang-Assessment/static/js/2.22260649.chunk.js.LICENSE.txt",
+    "static/media/logo.ce9ba999.png": "/Paymerang-Assessment/static/media/logo.ce9ba999.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0932775e.js",
+    "static/css/2.0a195bdc.chunk.css",
+    "static/js/2.22260649.chunk.js",
+    "static/css/main.08a9aa5a.chunk.css",
+    "static/js/main.8b0d09e6.chunk.js"
+  ]
+}
