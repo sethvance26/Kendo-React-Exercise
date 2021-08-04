@@ -20,9 +20,9 @@ Paymerang Assessment
 Given that Paymerang makes payments on behalf of their clients, they like to be able to display payment details in a clear, and concise manner for their employees. For this assessment, I was given JSON data with multiple Payees, Payments, and Remittances and the only requirement was to show each object in a paged interface. As a USER/EMPLOYEE, I would like to be able to see this JSON data in an easily digestable format.  In order to accomplish this user story, I decided to build my application with React and incorporated kendo-react-ui and react-bootstrap for use of their components. This application was created as an exercise and is NOT affliated with the official Paymerang brand.
 
 ## Contact
-[Email]-(sethvance39@gmail.com)
+Email: sethvance39@gmail.com
 <br>
-[GitHub]-(sethvance26)
+GitHub Username:-sethvance26
 
 
 ## Installation
