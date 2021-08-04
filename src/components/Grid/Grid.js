@@ -85,14 +85,14 @@ const GridPage = () => {
     setDataResult({ ...dataResult });
   };
 
-  console.log("orders", orders);
+
 
   return (
     <div>
       <Grid
         style={{
           width: "100vw",
-          height: "89vh",
+          
         }}
         sortable={true}
         filterable={true}

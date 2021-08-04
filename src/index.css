@@ -2,7 +2,7 @@
   background-color: rgb(255, 255, 255) !important;
   padding-left: 1rem;
   z-index: 2;
-  position: absolute;
+  height: 5vh;
   -webkit-box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.6);
   box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.6);
 }
@@ -101,6 +101,10 @@
   align-self: center;
   font-size: 10vw;
   color: white;
+}
+
+.details-view-element .k-grid {
+  height: 90vh;
 }
 
 @media (max-width: 465px) {
