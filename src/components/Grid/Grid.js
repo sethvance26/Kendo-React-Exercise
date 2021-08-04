@@ -3,8 +3,6 @@ import { Grid, GridColumn } from "@progress/kendo-react-grid";
 import orders from "../Data/sample.json";
 import { process } from "@progress/kendo-data-query";
 
-const DATE_FORMAT = "yyyy-mm-dd hh:mm:ss.SSS";
-
 const DetailComponent = (props) => {
   const dataItem = props.dataItem;
 
@@ -48,7 +46,13 @@ const DetailComponent = (props) => {
           </p>
         </div>
         <div className="details-view-element">
-          <Grid style={{ height: "300px" }} data={dataItem.Remittance} />
+          <Grid style={{ height: "200px" }} data={dataItem.Remittance}>
+            <GridColumn field="PayorId" title="Payor ID" width="100px" />
+            <GridColumn field="PayorName" title="Payor Name" width="130px" />
+            <GridColumn field="InvoiceNo" title="Invoice #" width="110px" />
+            <GridColumn field="Description" title="Description" width="400px" />
+            <GridColumn field="Amount" title="Amount" />
+          </Grid>
         </div>
       </div>
     </div>
