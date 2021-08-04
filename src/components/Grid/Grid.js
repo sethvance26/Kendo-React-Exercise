@@ -2,6 +2,7 @@ import * as React from "react";
 import { Grid, GridColumn } from "@progress/kendo-react-grid";
 import orders from "../Data/sample.json";
 import { process } from "@progress/kendo-data-query";
+import { Helmet } from 'react-helmet';
 
 const DetailComponent = (props) => {
   const dataItem = props.dataItem;
@@ -89,6 +90,9 @@ const GridPage = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>Payment Details</title>
+      </Helmet>
       <Grid
         style={{
           width: "100vw",
