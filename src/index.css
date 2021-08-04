@@ -1,0 +1,114 @@
+.nav-container {
+  background-color: rgb(255, 255, 255) !important;
+  padding-left: 1rem;
+  z-index: 2;
+  position: absolute;
+  -webkit-box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.6);
+}
+
+.attention-payment {
+  width: 18rem;
+}
+
+.remittance-cards {
+  width: 25rem;
+}
+
+.details-view {
+  display: flex;
+  overflow: hidden !important;
+  flex-wrap: wrap;
+}
+
+.details-view-element {
+  flex-wrap: wrap;
+  margin-right: 7rem;
+  margin-left: 1rem;
+  min-width: 5rem;
+  max-width: 65rem;
+}
+
+.logo {
+  width: 200px;
+}
+
+.detail-column {
+  width: 150px;
+}
+
+.k-grid-header thead > tr:not(:only-child) > th {
+  width: 150px;
+}
+
+.details-card {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.details-card p {
+  margin: 0;
+}
+
+.remittance-column {
+  width: 200px;
+}
+
+.footer {
+  height: 5vh;
+  background: rgb(42, 42, 42);
+  background: linear-gradient(
+    0deg,
+    rgba(42, 42, 42, 1) 0%,
+    rgba(27, 27, 27, 1) 100%
+  );
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.center-text {
+  align-self: center;
+  font-size: 1em;
+  color: white;
+}
+
+.nav-item .nav-link {
+  color: black;
+}
+
+.nav-item .nav-link:hover {
+  cursor: pointer;
+  color: rgb(83, 81, 81);
+}
+
+.home-background {
+  display: flex;
+  justify-content: center;
+  height: 90vh;
+  width: 100%;
+  background: rgb(117, 30, 130);
+  background: linear-gradient(
+    0deg,
+    rgba(117, 30, 130, 1) 0%,
+    rgba(215, 2, 122, 1) 100%
+  );
+}
+
+.center-home-text {
+  align-self: center;
+  font-size: 10vw;
+  color: white;
+}
+
+@media (max-width: 465px) {
+  .details-card {
+    padding: 1rem;
+  }
+
+  .k-detail-cell {
+    padding: 0;
+  }
+}
