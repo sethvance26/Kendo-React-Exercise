@@ -14,7 +14,7 @@ export const App = () => {
         <NavbarComp />
         <Footer />
         <Switch>
-          <Route exact path="/home" component={Home} />
+          <Route exact path="/" component={Home} />
           <Route exact path="/Info" component={GridPage} />
         </Switch>
       </div>
